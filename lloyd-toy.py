@@ -65,7 +65,6 @@ def duplicate_codebook(codebook, perturbation_vector):
     
     for cw_id, cw in codebook.items():
         cw_shape = cw.shape
-        #perturbation_vector = np.sqrt(perturbation_variance/2) * (np.random.randn(cw_shape[0], cw_shape[1]) + np.random.randn(cw_shape[0], cw_shape[1]) * 1j)
         
         cw1_id = uuid.uuid4()
         cw1 = cw + perturbation_vector
