@@ -8,9 +8,7 @@ Created on Mon Jul 13 08:52:04 2020
 import concurrent.futures
 import numpy as np
 import uuid
-import matplotlib.pyplot as plt
 import os
-import time
 import json
 
 def gen_dftcodebook(num_of_cw):
@@ -245,7 +243,7 @@ def run_lloyd_lbg(paranm):
         variance = paranm[1]
         data['variance_of_samples'] = variance
     
-        num_of_samples = 60000
+        num_of_samples = 1000
         data['num_of_samples'] = num_of_samples
     
         samples = gen_samples(dftcodebook, num_of_samples, variance)
