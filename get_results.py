@@ -5,23 +5,23 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-def check_files(prefix, episodefiles):
+def check_files(prefix, resultfiles):
     pathfiles = {}
-    for ep_file in episodefiles:
-        pathfile = prefix + str('/') + str(ep_file)
+    for resultfile in resultfiles:
+        pathfile = prefix + str('/') + str(resultfile)
         ep_file_status = False
         try:
             current_file = open(pathfile)
-            ep_file_status = True
+            resultfile_status = True
             #print("Sucess.")
         except IOError:
             print("File not accessible: ", pathfile)
         finally:
             current_file.close()
 
-        if ep_file_status:
-            ep_file_id = uuid.uuid4()
-            pathfiles[ep_file_id] = pathfile
+        if resultfile_status:
+            resultfile_id = uuid.uuid4()
+            pathfiles[resultfile_id] = pathfile
  
     return pathfiles
 
