@@ -33,27 +33,27 @@ def decode_mean_distortion(mean_distortion_dict):
     return mean_distortion_list
 
 
+if __name__ == '__main__':
 
-
-prefix_pathfiles = '/home/snow/code/lloyd-toy/results/'
-result_files = os.listdir(prefix_pathfiles)
-
-pathfiles = check_files(prefix_pathfiles, result_files)
-print ('# of json files: ', len(pathfiles))
- 
-
-#fig, ax = plt.subplots()
-for pathfile_id, pathfile in pathfiles.items():
-    with open(pathfile) as result:
-        data = result.read()
-        d = json.loads(data)
-    num_of_cw = d["num_of_cw"]
-    var = d["variance_of_samples"]
-    var = float("{:.2f}".format(var))
-    sets =  d["sets"]
-    mean_distortion = decode_mean_distortion(d["mean_distortion"])
-    lloyd_codebook = d["lloydcodebook"]
+    prefix_pathfiles = '/home/snow/github/land/projects/lloyd-toy/results/'
+    result_files = os.listdir(prefix_pathfiles)
     
-    if num_of_cw == 4:
-        if var == 0.5:
-            print (sets)
+    pathfiles = check_files(prefix_pathfiles, result_files)
+    print ('# of json files: ', len(pathfiles))
+     
+    
+    #fig, ax = plt.subplots()
+    for pathfile_id, pathfile in pathfiles.items():
+        with open(pathfile) as result:
+            data = result.read()
+            d = json.loads(data)
+        num_of_cw = d["num_of_cw"]
+        var = d["variance_of_samples"]
+        var = float("{:.2f}".format(var))
+        sets =  d["sets"]
+        mean_distortion = decode_mean_distortion(d["mean_distortion"])
+        lloyd_codebook = d["lloydcodebook"]
+        
+        if num_of_cw == 4:
+            if var == 0.5:
+                print (sets)
