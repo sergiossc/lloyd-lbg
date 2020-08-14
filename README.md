@@ -1,4 +1,4 @@
-# Vector Quantization applied on Codebook Design problem: Lloyd-LBG algorithm
+# Vector Quantization applied on Codebook Design problem using Generalized Lloyd Algorithm (GLA)
 
 ## Main reference
 *[1] Linde, Y., Buzo, A., & Gray, R. (1980). An algorithm for vector quantizer design. IEEE Transactions on communications, 28(1), 84-95.*
