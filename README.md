@@ -23,6 +23,7 @@ $ pip install -r requirements.txt
 
 ## Running a example
 ### Setting up the 'profile.json' with overall parameters like this:
+{
     "number_of_elements": [4, 16],
     "variance_of_samples_values": [0.01, 0.1],
     "initial_alphabet_opts": ["random_from_samples", "unitary_until_num_of_elements"],
@@ -32,5 +33,5 @@ $ pip install -r requirements.txt
     "num_of_interactions": 2,
     "results_directory": "/home/snow/code/lloyd-lbg/results",
     "use_same_samples_for_all": true
-
+}
 
