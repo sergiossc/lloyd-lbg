@@ -11,17 +11,16 @@ As stated in [1], the algorithm produces a quantizer meeting necessary but not s
 
 PUT FLOWCHART HERE!
 
-## 4. Prerequisites
-4.1. This code was made in python3.6.
-4.2. We need of the following aditional packages:
-matplotlib>=3.1.3; and,
-numpy>=1.18.1
+## 4. Required python packages
+* This code was made in python3.6.
+* We need of the following aditional packages: matplotlib>=3.1.3; and, numpy>=1.18.1
 
 To install these aditional packages try:
 $ pip install -r requirements.txt
 
-## Running a example
-### Setting up the 'profile.json' with overall parameters like this:
+## 5. Running an example
+1. 'profile.json' file
+* Setting up the 'profile.json' with overall parameters like this:
 
     "number_of_elements": [4, 16],  #this is the Nt values 
     "variance_of_samples_values": [0.01, 0.1], # this is the variance of samples
@@ -33,7 +32,6 @@ $ pip install -r requirements.txt
     "results_directory": "/home/path/to/lloyd-lbg/results", # path to save result json files of each trial
     "use_same_samples_for_all": true # set it true (false) if you want to use (or not) the same training samples in all trials
 
-The total number of trials is *[len(number_of_elements) x len(variance_of_samples_values) x len(distortion_measure_opts) x num_of_trials]*.
-Running the code with this profile.json file we should get [2 x 2 x 2 x 2 x 1] = 16 trials and its respective json result file.
+* The total number of trials is *[len(number_of_elements) x len(variance_of_samples_values) x len(distortion_measure_opts) x num_of_trials]*. Running the code with this profile.json file we should get [2 x 2 x 2 x 2 x 1] = 16 trials and its respective json result file.
 
-### Running the code
+2. Running the code
