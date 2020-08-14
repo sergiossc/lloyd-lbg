@@ -31,7 +31,9 @@ $ pip install -r requirements.txt
     "num_of_trials": 1, # number of trials to run eath setup
     "num_of_samples": 80, # number of training samples
     "num_of_interactions": 2, # number max of interactions during training. 20 is a good number.
-    "results_directory": "/home/snow/code/lloyd-lbg/results", # path to save result json files of each trial
+    "results_directory": "/home/path/to/lloyd-lbg/results", # path to save result json files of each trial
     "use_same_samples_for_all": true # set it true (false) if you want to use (or not) the same training samples in all trials
 
+The total number of trials is *[len(number_of_elements) x len(variance_of_samples_values) x len(distortion_measure_opts) x num_of_trials]*.
+Running the code with this profile.json file we should get [2 x 2 x 2 x 2 x 1] = 16 trials and its respective json result file.
 
