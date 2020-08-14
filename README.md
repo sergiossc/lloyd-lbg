@@ -14,5 +14,13 @@ PUT FLOWCHART HERE!
 ## Installing
 
 ### Prerequisits
+To run this code we need of the following packages:
+matplotlib>=3.1.3
+numpy>=1.18.1
 
+To install it try:
 $ pip install -r requirements.txt
+
+## Running a example
+
+
