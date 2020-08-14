@@ -22,8 +22,8 @@ $ pip install -r requirements.txt
 1. 'profile.json' file
 * Setting up the 'profile.json' with overall parameters like this:
 
-    "number_of_elements": [4, 16], **#this is the Nt values 
-    "variance_of_samples_values": [0.01, 0.1], **# this is the variance of samples
+    number_of_elements: [4, 16], **#this is the Nt values 
+    variance_of_samples_values: [0.01, 0.1], **# this is the variance of samples
     "initial_alphabet_opts": ["random_from_samples", "unitary_until_num_of_elements"], **# this is options of initial alphabet
     "distortion_measure_opts": ["mse", "gain"], **# measure distortion options
     "num_of_trials": 1, **# number of trials to run eath setup
