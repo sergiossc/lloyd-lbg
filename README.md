@@ -43,3 +43,6 @@ $ pip install -r requirements.txt
 * The total number of trials is *[len(number_of_elements) x len(variance_of_samples_values) x len(distortion_measure_opts) x num_of_trials]*. Running the code with this profile.json file we should get [2 x 2 x 2 x 2 x 1] = 16 trials and its respective json result file.
 
 2. Running the code
+
+Use lloyd.py script to run the code:
+$ python3.6 lloyd.py
