@@ -9,3 +9,10 @@ This code begins defining a DFT codebook with an arbitrary size *Nt*. This codeb
 ## Implementation
 As stated in [1], the algorithm produces a quantizer meeting necessary but not sufficient conditions for optimality. Usually, however, at least local optimality is assured, and the choice of initial reconstruct alphabet looks like to be crucial to define a better quantizer. There are several ways to chose it. Trying to get the best quantizer(the original DFT codebook), this code implements two ways to choice initial reconstruct alphabet: (I) selecting *L* random codewords from samples; and, (II) considering initial reconstruct alphabet as M-level quantizers with *M=2^R*, for *R* in *[0, 1, 2,..., log2(L)]*. Furthermore, two distortion measures are used in each blend of Lloyd-LBG algorithm: (1) Squared Error, and (2) Gain as internal product. The results are encoded and stored in json data files.
 
+PUT FLOWCHART HERE!
+
+## Installing
+
+### Prerequisits
+
+$ pip install -r requirements.txt
