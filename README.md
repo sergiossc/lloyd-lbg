@@ -21,7 +21,7 @@ To install these aditional packages try:
 ## 5. Running an example
 1. 'profile.json' file
 * Setting up the 'profile.json' with overall parameters like this:
-```javascript
+```
 
     "number_of_elements": [4, 16], # Nt values 
     
