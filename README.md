@@ -16,30 +16,30 @@ PUT FLOWCHART HERE!
 * We need of the following aditional packages: matplotlib>=3.1.3; and, numpy>=1.18.1
 
 To install these aditional packages try:
-$ pip install -r requirements.txt
+* $ pip install -r requirements.txt
 
 ## 5. Running an example
 1. 'profile.json' file
 * Setting up the 'profile.json' with overall parameters like this:
 ```javascript
 
-    "number_of_elements": [4, 16], #this is the Nt values 
+    "number_of_elements": [4, 16], # Nt values 
     
-    "variance_of_samples_values": [0.01, 0.1], # this is the variance of samples
+    "variance_of_samples_values": [0.01, 0.1], # Values of variance of noised samples
     
-    "initial_alphabet_opts": ["random_from_samples", "unitary_until_num_of_elements"], # this is options of initial alphabet
+    "initial_alphabet_opts": ["random_from_samples", "unitary_until_num_of_elements"], # Options of initial alphabet
     
-    "distortion_measure_opts": ["mse", "gain"], # measure distortion options
+    "distortion_measure_opts": ["mse", "gain"], # Distortion measure  options
     
-    "num_of_trials": 1, # number of trials to run eath setup
+    "num_of_trials": 1, # Number of trials to run eath setup
     
-    "num_of_samples": 80, # number of training samples
+    "num_of_samples": 80, # Number of training samples
     
-    "num_of_interactions": 2, # number max of interactions during training. 20 is a good number.
+    "num_of_interactions": 2, # Number max of interactions during training. 20 is a good number.
     
-    "results_directory": "/home/path/to/lloyd-lbg/results", # path to save result json files of each trial
+    "results_directory": "/home/path/to/lloyd-lbg/results", # Path to save result json files of each trial
     
-    "use_same_samples_for_all": true # set it true (or false) if you want to use (or not) the same training samples in all trials
+    "use_same_samples_for_all": true # Set it true (or false) if you want to use (or not) the same training samples over all trials
 ```
 
 * The total number of trials is *[len(number_of_elements) x len(variance_of_samples_values) x len(distortion_measure_opts) x num_of_trials]*. Running the code with this profile.json file we should get [2 x 2 x 2 x 2 x 1] = 16 trials and its respective json result file.
@@ -47,4 +47,4 @@ $ pip install -r requirements.txt
 2. Running the code
 
 Use lloyd.py script to run the code:
-$ python3.6 lloyd.py
+* $ python3.6 lloyd.py
