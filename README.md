@@ -23,15 +23,15 @@ $ pip install -r requirements.txt
 
 ## Running a example
 ### Setting up the 'profile.json' with overall parameters like this:
-{
-    "number_of_elements": [4, 16],
-    "variance_of_samples_values": [0.01, 0.1],
-    "initial_alphabet_opts": ["random_from_samples", "unitary_until_num_of_elements"],
-    "distortion_measure_opts": ["mse", "gain"],
-    "num_of_trials": 1,
-    "num_of_samples": 80,
-    "num_of_interactions": 2,
-    "results_directory": "/home/snow/code/lloyd-lbg/results",
-    "use_same_samples_for_all": true
-}
+
+    "number_of_elements": [4, 16],  #this is the Nt values 
+    "variance_of_samples_values": [0.01, 0.1], # this is the variance of samples
+    "initial_alphabet_opts": ["random_from_samples", "unitary_until_num_of_elements"], # this is options of initial alphabet
+    "distortion_measure_opts": ["mse", "gain"], # measure distortion options
+    "num_of_trials": 1, # number of trials to run eath setup
+    "num_of_samples": 80, # number of training samples
+    "num_of_interactions": 2, # number max of interactions during training. 20 is a good number.
+    "results_directory": "/home/snow/code/lloyd-lbg/results", # path to save result json files of each trial
+    "use_same_samples_for_all": true # set it true (false) if you want to use (or not) the same training samples in all trials
+
 
