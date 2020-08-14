@@ -15,12 +15,14 @@ PUT FLOWCHART HERE!
 
 ### Prerequisits
 To run this code we need of the following packages:
-matplotlib>=3.1.3
+matplotlib>=3.1.3; and,
 numpy>=1.18.1
 
 To install it try:
 $ pip install -r requirements.txt
 
 ## Running a example
+1. Set up 'profile.json' with overall parameters
+
 
 
