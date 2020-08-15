@@ -16,11 +16,11 @@ PUT FLOWCHART HERE!
 * We need of the following aditional packages: matplotlib>=3.1.3; and, numpy>=1.18.1
 
 To install these aditional packages try:
-* $ pip install -r requirements.txt
+* $ python3.6 -m pip install -r requirements.txt
 
 ## 5. Running an example
-1. 'profile.json' file
-* Setting up the 'profile.json' with overall parameters like this:
+1. Edit 'profile.json' file
+* Setting up the 'profile.json' file with general parameters like this:
 ```
 
     "number_of_elements": [4, 16], # Nt values 
@@ -42,9 +42,9 @@ To install these aditional packages try:
     "use_same_samples_for_all": true # Set it true (or false) if you want to use (or not) the same training samples over all trials
 ```
 
-* The total number of trials is *[len(number_of_elements) x len(variance_of_samples_values) x len(distortion_measure_opts) x num_of_trials]*. Running the code with this profile.json file we should get [2 x 2 x 2 x 2 x 1] = 16 trials and its respective json result file.
+* To this 'profile.json' file, the total number of trials is *[len(number_of_elements) x len(variance_of_samples_values) x len(distortion_measure_opts) x num_of_trials]*. Running the code with this 'profile.json' file we should get [2 x 2 x 2 x 2 x 1] = 16 trials and its respective *\*.json* result file.
 
 2. Running the code
 
-Use lloyd.py script to run the code:
+Use 'lloyd.py' script to run the code:
 * $ python3.6 lloyd.py
